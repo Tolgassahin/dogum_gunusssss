@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>İyi ki Doğdun Eksik Parçam 🖤</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    html, body {
+      margin: 0; padding: 0;
+      font-family: 'Arial', sans-serif;
+      height: 100%;
+      overflow: hidden;
+      background: linear-gradient(to bottom right, #ffd6e8, #fff);
+      user-select: none;
+    }
+    .hidden { display: none; }
+    .centered {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    #countdown {
+      font-size: 2em;
+      color: #d63384;
+      background-color: rgba(255,255,255,0.85);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      cursor: pointer;
+    }
+    .section {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      padding: 60px 20px;
+      box-sizing: border-box;
+      text-align: center;
+      background-color: #fff0f5;
+      opacity: 0;
+      transition: opacity 0.6s ease;
+      pointer-events: none;
+    }
+    .section.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #d63384;
+    }
+    h2 {
+      color: #444;
+      margin-bottom: 20px;
+    }
+    .quiz-title {
+      font-family: 'Arial', sans-serif;
+      font-size: 2em;
+      color: #d63384;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .button {
+      padding: 15px 25px;
+      background-color: #ff69b4;
+      color: white;
+      font-size: 1em;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .quiz-option {
+      display: block;
+      margin: 10px auto;
+      padding: 10px 20px;
+      background-color: #ffb6c1;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      width: fit-content;
+    }
+    .dialog-box {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      margin-top: 20px;
+    }
+    .overlay-message {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 240, 245, 0.95);
+      border: 2px solid #d63384;
+      padding: 30px 40px;
+      font-size: 1.4em;
+      color: #d63384;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      z-index: 1000;
+      text-align: center;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translate(-50%, -60%); }
+      to { opacity: 1; transform: translate(-50%, -50%); }
+    }
+  </style>
+</head>
+<body>
+
+<audio autoplay loop>
+  <source src="Ozdemir-Erdogan-Bana-Ellerini-Ver.mp3" type="audio/mpeg" />
+</audio>
+
+<div id="countdown" class="centered hidden">
+  Sena'nın doğum gününe kalan süre hesaplanıyor...
+</div>
+
+<section class="section" id="page0">
+  <h1>İyi Ki Doğdun<br>Eksik Parçam 🖤 </h1>
+  <p>Bu site benim küçük (DEVASA) bebeğim için hazırlandı, sadece ona özel.😽 </p>
+  <button class="button" id="nextToQuiz">Devam Et</button>
+</section>
+
+<section class="section" id="quiz">
+  <div id="quiz-container"></div>
+</section>
+
+<section class="section" id="page1" style="background-color:#fdf0f8;">
+  <h2>✉ Karıma Doğum Günü Mektubum</h2>
+  <p style="white-space: pre-wrap">
+  Evet, bugün bebeğimin doğum günü. Sana ilk kez 4 Aralık'ta Instagram'dan yazdığımdan beri tam 174 gün geçmiş. Neredeyse 6 ay olmuş ama bana bu süre çok daha uzun, çok daha dolu dolu geçmiş gibi geliyor. Sanki ömrümün 1-2 yılını seninle geçirmişim gibi…
+İyi ki hayatıma girdin, iyi ki seninle konuştum, tanıştım, görüştüm ve sevgili oldum.
+Hayatımda kimseyle böyle anlaşmadım, kimseyi bu kadar çok sevmedim.
+Keşke daha önce tanışsaymışız...
+Seninle geçirdiğim her dakikadan, her saniyeden o kadar zevk alıyorumki
+Ömrüm boyunca da her saniyeyi seninle geçirmek istiyorum.
+Seninle çok güzel günlerimiz oldu, zaman zaman kötü günlerimiz de… Ama ben o kötü günleri unutmak istiyorum. Seninle birlikte güldüm, seninle birlikte ağladım (hayatımda ilk kez birine karşı ağladım, o da sen oldun), seninle birlikte kızdım, kırıldım…
+Yani kısaca tüm duyguları seninle birlikte yaşadım ve bunları seninle paylaştım.
+Sana çok aşığım, seni deliler gibi seviyorum. Kendimi sana ait hissediyorum.
+Sana çok ama çok bağlıyım, gözüm senden başkasını görmüyor. Sana bakmaya bile kıyamıyorum, gözümden bile sakınıyorum.
+Bir yandan da çok kıskanıyorum çünkü insan sevdiğini kıskanır. Benim halim de ortada zaten.
+Seninle hem bu dünyada hem de öteki dünyada bir ömür geçirmek istiyorum.
+Seninle birlikte yaşlanmak, seninle çocuklarımız olsun istiyorum.
+Onları birlikte mutlu ve mesut bir şekilde büyütelim istiyorum.
+Sen benim dünyalar güzeli, tatlı karım ol; ben de ömrümün sonuna kadar sana bakayım istiyorum.
+Sabahları kalktığımda senin o en masum ve en tatlı yüz ifadenle uyanmak istiyorum.
+O yüzünü defalarca öperek seni uyandırmak, seni kucağımda uyurken izlemek ve nefes alışverişlerini kalbimde hissetmek istiyorum.
+Kısacası…
+İyi ki doğdun benim bu hayattaki mucizem.
+Nice birlikte doğum günlerine…
+Ömrüm seni çok ama çokkkk seviyorummmmm. 🖤🖤🖤🖤🖤
+ </p>
+  <button class="button" id="nextToSurprise">Devam Et</button>
+</section>
+
+<section class="section" id="page2" style="background-color:#fff;">
+  <h2>🎁 Sürpriz!</h2>
+  <button class="button" id="surpriseBtn">Sürprizi Gör</button>
+  <p id="surpriseText" style="display:none; margin-top:20px; color:#d63384; font-size:1.4em;">
+    Dayanamadım (hığğğğğ) <br />Ölürüm sana ben güzelim.🖤
+  </p>
+  <div id="photoGallery" class="gallery hidden">
+    <img src="foto1.jpg" alt="Fotoğraf 1" />
+    <img src="foto2.jpg" alt="Fotoğraf 2" />
+    <img src="foto3.jpg" alt="Fotoğraf 3" />
+  </div>
+</section>
+
+<script>
+  const sections = document.querySelectorAll('.section');
+  const countdownEl = document.getElementById('countdown');
+  let current = -1;
+
+  function showSection(index) {
+    sections.forEach((sec, i) => {
+      sec.classList.toggle('active', i === index);
+    });
+  }
+
+  countdownEl.addEventListener('click', () => {
+    countdownEl.classList.add('hidden');
+    current = 0;
+    showSection(current);
+  });
+
+  const surpriseBtn = document.getElementById('surpriseBtn');
+  const surpriseText = document.getElementById('surpriseText');
+  const photoGallery = document.getElementById('photoGallery');
+
+  surpriseBtn.addEventListener('click', e => {
+    e.stopPropagation();
+    const isHidden = surpriseText.style.display === 'none';
+    surpriseText.style.display = isHidden ? 'block' : 'none';
+    photoGallery.classList.toggle('hidden', !isHidden);
+  });
+
+  const quizData = [
+    {
+      question: 'Benim en sevdiğim renk ne?',
+      options: ['Kırmızı', 'Mavi', 'Pembe', 'Sarı'],
+      correct: 1
+    },
+    {
+      question: 'Kürdistanın Başkenti nerededir?',
+      options: ['Türkiye', 'Konya', 'Almanya', 'Boşluk'],
+      correct: 3
+    },
+    {
+      question: 'Bizim ilk birbirimizi gördüğümüz yer?',
+      options: ['Kürdistan', 'Mühendislik Yokuşu', 'Son durak', 'Kütürpane (😉)'],
+      correct: 2
+    },
+    {
+      question: 'Benim bebeğimin fiziksel özelliği hangisidir?',
+      options: ['Fıçı', 'Obez', 'Tlc (Ağır Yaşamlar)', 'Kütlesi büyük olan varlıklar (ayı,dana,balina,tosun vb.)'],
+      correct: -1
+    }
+  ];
+
+  let quizIndex = 0;
+  const quizContainer = document.getElementById('quiz-container');
+
+  function startQuiz() {
+    showSection(1);
+    quizIndex = 0;
+    renderQuiz();
+  }
+
+  function renderQuiz() {
+    const q = quizData[quizIndex];
+    quizContainer.innerHTML = `<h2 class="quiz-title">Kısa eğlenceli sorularss 😅</h2><h2>${q.question}</h2>`;
+    q.options.forEach((opt, i) => {
+      if (opt.trim() !== '') {
+        const btn = document.createElement('button');
+        btn.className = 'quiz-option';
+        btn.textContent = `${String.fromCharCode(65 + i)}) ${opt}`;
+        btn.onclick = () => handleAnswer(i);
+        quizContainer.appendChild(btn);
+      }
+    });
+  }
+
+  function handleAnswer(index) {
+    const q = quizData[quizIndex];
+    if (q.correct === -1) {
+      showConfirmation();
+      return;
+    }
+    if (index === q.correct) {
+      quizIndex++;
+      if (quizIndex < quizData.length) {
+        renderQuiz();
+      } else {
+        current = 3;
+        showSection(current);
+      }
+    } else {
+      showWrongMessage();
+      renderQuiz();
+    }
+  }
+
+  function showWrongMessage() {
+    const existing = document.querySelector('.overlay-message');
+    if (existing) existing.remove();
+    const msg = document.createElement('div');
+    msg.className = 'overlay-message';
+    msg.textContent = 'Soruyu Doğru Oku Cavani Başii.😑';
+    document.body.appendChild(msg);
+    setTimeout(() => msg.remove(), 2000);
+  }
+
+  function showConfirmation() {
+    quizContainer.innerHTML = '<h2>Emin misin?</h2>';
+    const yesBtn = document.createElement('button');
+    yesBtn.className = 'quiz-option';
+    yesBtn.textContent = 'Evet';
+    yesBtn.onclick = () => {
+      quizContainer.innerHTML = '<div class="dialog-box centered">Yanlış bildin Aşkım sen benim her şeyimsinnnnn (😉)</div>';
+      setTimeout(() => {
+        current = 2;
+        showSection(current);
+      }, 2000);
+    };
+    const noBtn = document.createElement('button');
+    noBtn.className = 'quiz-option';
+    noBtn.textContent = 'Hayır';
+    noBtn.onclick = () => renderQuiz();
+    quizContainer.appendChild(yesBtn);
+    quizContainer.appendChild(noBtn);
+  }
+
+  const targetDate = new Date('2025-05-25T22:30:00').getTime();
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const diff = targetDate - now;
+    if (diff <= 0) {
+      countdownEl.textContent = "Umarım Beğenirsin 🖤!";
+      countdownEl.classList.remove("hidden");
+      return;
+    }
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+    countdownEl.textContent = `Bebeğimin Doğmasına Kalan Süre: ${days} Gün ${hours} Saat ${minutes} Dakika ${seconds} Saniye`;
+    countdownEl.classList.remove("hidden");
+    setTimeout(updateCountdown, 1000);
+  }
+
+  document.getElementById('nextToQuiz').addEventListener('click', () => {
+    if (!countdownEl.classList.contains('hidden')) return;
+    current = 1;
+    startQuiz();
+  });
+
+  document.getElementById('nextToSurprise').addEventListener('click', () => {
+    current = 3;
+    showSection(current);
+  });
+
+  updateCountdown();
+</script>
+</body>
+</html>
